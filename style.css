@@ -118,10 +118,10 @@ body{
 
     .box{
         background: #412;
-        width: 24.3vw;
+        width: 16vw;
         margin-right: 0.5vw;
         float: left;
-        height: 800px;
+        height: 18vw;
     }
     .box:nth-child(5){
         margin-right: 0px;        
