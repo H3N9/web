@@ -119,30 +119,24 @@ body{
     .box{
         background: #412;
         width: 16vw;
-        margin-right: 0.5vw;
-        float: left;
         height: 18vw;
-    }
-    .box:nth-child(5){
-        margin-right: 0px;        
+        margin-left: 8vw;
+        margin-top: 10vw;    
+        display: inline-block;
+        
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px){        
         .box{
-            width:49.6vw;
-            margin-top: 0.5vw;
-        }
-        .box:nth-child(3){
-            margin-right: 0px;   
+            width: 30vw;
+            height: 32vw;
+            margin-left: 14vw;
         }
     }
     @media screen and (max-width: 400px){
         .box{
-            margin-right: 0px;
-            margin-top: 0.5vw;
-            width: 100vw;
-        }
-        .box:nth-child(2){
-            margin-top: 0px;
+            width: 50vw;
+            height: 52vw;
+            margin-left: 25vw;
         }
     }
