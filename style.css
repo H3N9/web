@@ -122,7 +122,8 @@ body{
         height: 18vw;
         margin-left: 8vw;
         margin-top: 10vw;    
-        display: inline-block;
+        display: inline-block;        
+        border-radius: 12px;
         
     }
 
