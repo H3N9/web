@@ -103,7 +103,7 @@ body{
     #content{
         width: 100%;
         position: relative;
-        height: 100vh;
+        height: auto;
         background: black;
     }
     #con_text{
