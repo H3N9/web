@@ -103,8 +103,8 @@ body{
     #content{
         width: 100%;
         position: relative;
-        height: 100vh;
         background: black;
+        height: auto;
     }
     #con_text{
         position: absolute;
@@ -116,27 +116,41 @@ body{
         height: 2vw;
     }
 
+    #row1{
+        position: relative;
+        top: 15vw;
+        width: 100%;
+        height: auto;
+    }
+
+    #row2{
+        position: relative;
+        top: 25vw;
+        width: 100%;
+        height: auto;
+    }
+
     .box{
         background: #412;
         width: 16vw;
         height: 18vw;
-        margin-left: 8vw;
-        margin-top: 10vw;    
+        margin: 4vw;   
         display: inline-block;
+        border-radius: 12px;
         
     }
 
-    @media screen and (max-width: 768px){        
+    @media screen and (max-width: 768px){   
         .box{
             width: 30vw;
             height: 32vw;
-            margin-left: 14vw;
+            margin: 8vw;
         }
     }
     @media screen and (max-width: 400px){
         .box{
             width: 50vw;
             height: 52vw;
-            margin-left: 25vw;
+            margin: 25vw;
         }
     }
