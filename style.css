@@ -116,4 +116,33 @@ body{
         height: 2vw;
     }
 
+    .box{
+        background: #412;
+        width: 24.3vw;
+        margin-right: 0.5vw;
+        float: left;
+        height: 800px;
+    }
+    .box:nth-child(5){
+        margin-right: 0px;        
+    }
 
+    @media screen and (max-width: 768px){
+        .box{
+            width:49.6vw;
+            margin-top: 0.5vw;
+        }
+        .box:nth-child(3){
+            margin-right: 0px;   
+        }
+    }
+    @media screen and (max-width: 400px){
+        .box{
+            margin-right: 0px;
+            margin-top: 0.5vw;
+            width: 100vw;
+        }
+        .box:nth-child(2){
+            margin-top: 0px;
+        }
+    }
