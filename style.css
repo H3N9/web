@@ -2,8 +2,6 @@ body{
     margin: 0;
 }
 
-@media(min-width: 0px){
-
     /*Navigater bar*/
     #bar{
         width: 100%;
@@ -22,7 +20,6 @@ body{
         height: 100%;
         float: right;
         text-align: center;
-        
     }
     #line_right_home{
         position: absolute;
@@ -55,240 +52,68 @@ body{
         background: black;
         bottom: 0;
         right: 0;
+        
     }
     #bar .list  a{
         text-decoration: none;
         color: black;
         font-size: 2.5vw;
         transition: 0.5s;
-        font-family: 'Mitr', sans-serif;
+        font-family: 'Anton', sans-serif;
+        
         
     }
     #bar .list:hover{
         background: rgba(100, 100, 100, 0.5);
+        text-decoration-line: underline;
     }
 
 
 
-
+    /* Image and text header*/
+    #bg1{
+        position: relative;
+    }
     #img_h{
         width: 100%;
         height: auto;
         margin: 0;
     }
-    #bg1_text{
+    #bg_text{
         position: absolute;
-        top: 30%;
+        width: 30%;
+        top: 10vw;
         left: 10%;
-        font-family: 'Charm', cursive;
+        font-size: 2vw;
+        font-family: 'Anton', sans-serif;
     }
-    #content{
-        width: 100%;
-        height: 1000px;
-        background: white;
-    }
-}
-
-/*@media(max-width: 720px){
-    #bar{
-        width: 100%;
-        height: 30px;
-        position: fixed;
-        background: rgba(172, 172, 172, 0.5);
-        z-index: 1;
-    }
-    #list{
-        list-style: none;
-        margin: auto;
-        background: rgba(172, 172, 172, 0.5);
-    }
-    #list li{
-        text-align: center;
-        float: left;
-    }
-    #bar #list li a{
-        display: block;
-        text-decoration: none;
-        color: white;
-        font-size: 1em;
-        width: 70px;
-        height: 100%;
-        transition: 0.5s;
-        font-family: 'Mitr', sans-serif;
-        
-    }
-    #bar #list li a:hover{
-        background: rgba(100, 100, 100, 0.5);
-    }
-    #img_h{
-        width: 100%;
-        height: 400px;
-        margin: 0;
-    }
-    #bg1_text{
+    #bg2_text{
         position: absolute;
-        top: 40%;
-        left: 60%;
-        font-family: 'Charm', cursive;
+        top: 12vw;
+        left: 12%;
     }
+    #bg3_text{
+        position: absolute;
+        top: 15vw;
+        left: 20%;
+    }
+
+
+    /* Critical content*/
     #content{
         width: 100%;
-        height: 1000px;
+        position: relative;
+        height: 100vh;
         background: black;
     }
-}*/
-
-
-
-
-/*
-body{
-    margin: 0;
-}
-
-@media(min-width: 720px) and (max-width: 2480px){
-    #bar{
-        width: 100%;
-        height: 60px;
-        position: fixed;
-        background: rgba(172, 172, 172, 0.5);
-        z-index: 1;
-    }
-    #list{
-        list-style: none;
-        margin: 0;
-        background: rgba(172, 172, 172, 0.5);
-    }
-    #list li{
-        text-align: center;
-        float: left;
-    }
-    #bar #list li a{
-        display: block;
-        text-decoration: none;
-        color: white;
-        font-size: 2em;
-        width: 150px;
-        height: 100%;
-        transition: 0.5s;
-        font-family: 'Mitr', sans-serif;
-        
-    }
-    #bar #list li a:hover{
-        background: rgba(100, 100, 100, 0.5);
-    }
-    #img_h{
-        width: 100%;
-        height: 720px;
-        margin: 0;
-    }
-    #bg1_text{
+    #con_text{
         position: absolute;
-        top: 40%;
-        left: 60%;
-        font-family: 'Charm', cursive;
-    }
-    #content{
-        width: 100%;
-        height: 1000px;
-        background: black;
-    }
-}
-@media(max-width: 720px){
-    #bar{
-        width: 100%;
-        height: 30px;
-        position: fixed;
-        background: rgba(172, 172, 172, 0.5);
-        z-index: 1;
-    }
-    #list{
-        list-style: none;
-        margin: auto;
-        background: rgba(172, 172, 172, 0.5);
-    }
-    #list li{
-        text-align: center;
-        float: left;
-    }
-    #bar #list li a{
-        display: block;
-        text-decoration: none;
         color: white;
-        font-size: 1em;
-        width: 70px;
-        height: 100%;
-        transition: 0.5s;
-        font-family: 'Mitr', sans-serif;
-        
+        font-family: 'Oswald', sans-serif;
+        font-size: 2vw;
+        left: 3%;
+        width: 30%;
+        height: 2vw;
     }
-    #bar #list li a:hover{
-        background: rgba(100, 100, 100, 0.5);
-    }
-    #img_h{
-        width: 100%;
-        height: 400px;
-        margin: 0;
-    }
-    #bg1_text{
-        position: absolute;
-        top: 40%;
-        left: 60%;
-        font-family: 'Charm', cursive;
-    }
-    #content{
-        width: 100%;
-        height: 1000px;
-        background: black;
-    }
-}
-@media(min-width: 2480px){
-    #bar{
-        width: 100%;
-        height: 100px;
-        position: fixed;
-        background: rgba(172, 172, 172, 0.5);
-        z-index: 1;
-    }
-    #list{
-        list-style: none;
-        margin: auto;
-        background: rgba(172, 172, 172, 0.5);
-    }
-    #list li{
-        text-align: center;
-        float: left;
-    }
-    #bar #list li a{
-        display: block;
-        text-decoration: none;
-        color: white;
-        font-size: 3em;
-        width: 200px;
-        height: 100%;
-        transition: 0.5s;
-        font-family: 'Mitr', sans-serif;
-        
-    }
-    #bar #list li a:hover{
-        background: rgba(100, 100, 100, 0.5);
-    }
-    #img_h{
-        width: 100%;
-        height: 1000px;
-        margin: 0;
-    }
-    #bg1_text{
-        position: absolute;
-        top: 40%;
-        left: 60%;
-        font-family: 'Charm', cursive;
-        font-size: 2em;
-    }
-    #content{
-        width: 100%;
-        height: 1000px;
-        background: black;
-    }
-}
-*/
+
+
