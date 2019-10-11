@@ -110,9 +110,9 @@ body{
         position: absolute;
         color: white;
         font-family: 'Oswald', sans-serif;
-        font-size: 2vw;
+        font-size: 2.5vw;
         left: 3%;
-        width: 30%;
+        width: 40%;
         height: 2vw;
     }
 
@@ -120,24 +120,39 @@ body{
         background: #412;
         width: 16vw;
         height: 18vw;
-        margin-left: 8vw;
-        margin-top: 10vw;    
-        display: inline-block;        
-        border-radius: 12px;
+        margin: 4vw;
+        margin-top: 30vh;
+        display: inline-block;      
+        border-radius: 1vw;
         
+    }
+    .box #ww1{
+        position: absolute;
+        color: white;
+        top: 10vw;
+        font-size: 3vw;
+    }
+    .box #ww2{
+        position: absolute;
+        color: white;
+        top: 63%;
+        font-size: 3vw;
     }
 
     @media screen and (max-width: 768px){        
         .box{
             width: 30vw;
             height: 32vw;
-            margin-left: 14vw;
+            margin: 9vw;
+            margin-top: 30vh;
+        }.box #ww2{
+            top: 54%;
         }
     }
     @media screen and (max-width: 400px){
         .box{
             width: 50vw;
             height: 52vw;
-            margin-left: 25vw;
+            margin: 24vw;
         }
     }
