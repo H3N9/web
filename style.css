@@ -116,9 +116,9 @@ body{
         position: absolute;
         color: white;
         font-family: 'Oswald', sans-serif;
-        font-size: 2vw;
+        font-size: 2.5vw;
         left: 3%;
-        width: 30%;
+        width: 40%;
         height: 2vw;
     }
 
@@ -126,24 +126,49 @@ body{
         background: #412;
         width: 16vw;
         height: 18vw;
-        margin-left: 8vw;
-        margin-top: 10vw;
-        display: inline-block;
-        border-radius: 12px;
+        margin: 4vw;
+        margin-top: 16%;
+        float: left;
+        border-radius: 1vw;
         
+    }
+    .box #ww1{
+        position: absolute;
+        color: white;
+        top: 10vw;
+        left: 4vw;
+        font-size: 3vw;
+    }
+    .box #ww2{
+        position: absolute;
+        color: white;
+        top: 80%;
+        font-size: 3vw;
     }
 
     @media screen and (max-width: 768px){        
         .box{
             width: 30vw;
             height: 32vw;
-            margin-left: 14vw;
+            margin: 9vw;
+            margin-top: 16%;
+        }.box #ww2{
+            top: 205%;
+        }
+        .box #ww1{
+            left: 8vw;
         }
     }
     @media screen and (max-width: 400px){
         .box{
             width: 50vw;
             height: 52vw;
-            margin-left: 25vw;
+            margin: 18% 24vw 0 24vw;
+        }
+        .box #ww1{
+            left: 23vw;
+        }
+        .box #ww2{
+            top: 480%;
         }
     }
