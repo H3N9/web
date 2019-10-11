@@ -1,7 +1,15 @@
 body{
     margin: 0;
+    background: #000;
 }
 
+#ww1{
+    position: absolute;
+    top:2vh;
+    left: 10vw;
+    color: white;
+    font-size: 3vw;
+}
     /*Navigater bar*/
     #bar{
         width: 100%;
@@ -97,13 +105,11 @@ body{
         top: 15vw;
         left: 20%;
     }
-
-
     /* Critical content*/
     #content{
         width: 100%;
         position: relative;
-        height: auto;
+        height: 60vw;
         background: black;
     }
     #con_text{
@@ -121,8 +127,8 @@ body{
         width: 16vw;
         height: 18vw;
         margin-left: 8vw;
-        margin-top: 10vw;    
-        display: inline-block;        
+        margin-top: 10vw;
+        display: inline-block;
         border-radius: 12px;
         
     }
