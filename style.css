@@ -159,7 +159,7 @@ body{
     }
     .box-img a{
         display: block;
-        padding: 31.5%;
+        padding: 32%;
         font-size: 0;
         background-image: url("img/day.png");
         background-size: cover;
@@ -205,6 +205,8 @@ body{
             width: 40%;
             height: 50vw;
             margin-left: 6.6%;
+            margin-top: 1%;
+            margin-bottom: 2%;
         }
         .box-text-head a{
             font-size: 3vw;
