@@ -115,85 +115,126 @@ body{
         width: 40%;
         height: 2vw;
     }
+    #line_break{
+        width: 100%;
+        height: 10%;
+        position: relative;
+    }
     .row{
         width: 100%;
-        background: black;
+        background: white;
         position: relative;
         overflow: auto;
         clear: both;
     }
+    .ww{
+        color: black;
+        position: absolute;
+        left: 3%;
+        top: -2.5vw;
+        font-size: 3.5vw;
+    }
     .box{
-        width: 18.5vw;
-        height: 25vh;
+        width: 20%;
+        height: 23vw;
         background: white;
+        position: relative;
         display: block;
         float: left;
-        margin: 3%;
-        border-radius: 1vw;
-        transition: 1s;
-        box-shadow: 0.1vw 0.1vw 0.8vw #aaaaaa;
-        text-align: center;
+        margin-left: 4%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        transition: 0.5s;
+        box-shadow: 0.2vw 0.2vw 0.8vw #aaaaaa;
         overflow: hidden;
     }
     .box:hover{
-        box-shadow: 0 0 0 0 rgb(112, 112, 112);
+        box-shadow: 0.3vw 0.3vw 1vw 0.4vw #aaaaaa;
     }
-    .box img{
+    .box-img{
+        width: 100%;
+        height: 50%;
         position: relative;
+        text-align: center;
     }
-    .box a{
+    .box-img a{
         display: block;
-        line-height: 27vh;
+        padding: 31.5%;
         font-size: 0;
-        transition: 0.5s;
-        color: white;
+        background-image: url("img/day.png");
+        background-size: cover;
+        
     }
-    .box a:hover{
-        line-height: 20.5vh;
+    .box-text{
+        widows: 100%;
+        background: black;
+        height: 50%;
     }
-    .slide{
-        display: inline-block;
-        background: rgba(100, 100, 100, 0.7);
-        font-size: 3vh;
+    .box-text-head{
         width: 100%;
         height: 20%;
-        text-shadow: 0.1vw 0.1vw 0.1vw black;
+        position: relative;
     }
-    #day{
-        background: url("img/day.jpg");
-        background-size: cover;
-    }
-    .ww{
+    .box-text-head a{
+        display: block;
         color: white;
-        position: absolute;
-        left: 3%;
-        top: -3.5vw;
-        font-size: 3.5vw;
-        z-index: 2;
+        padding-left: 8%;
+        padding-top: 8%;
+        top: -1vw;
+        left: 10%;
+        font-size: 1.6vw;
+        text-decoration: none;
     }
+    .box-text-a{
+        width: 100%;
+        height: 80%;
+        position: relative;
+    }
+    .box-text-a a{
+        display: block;
+        padding-top: 8%;
+        padding-left: 8%;
+        font-size: 1.3vw;
+        text-decoration: none;
+        color: white;
+    }
+
 
     @media screen and (max-width: 768px){
         .box{
-            width: 42vw;
-            margin: 4%;
+            width: 40%;
+            height: 50vw;
+            margin-left: 6.6%;
+        }
+        .box-text-head a{
+            font-size: 3vw;
+        }
+        .box-text-a a{
+            font-size: 2vw;
         }
         
     }
 
-    @media screen and (max-width: 425px){
+   /* @media screen and (max-width: 425px){
         .box{
             width: 76vw;
-            height: 50vw;
+            height: 80vw;
             margin: 3% 0 5% 11%;
         }
         .ww{
             left: 10%;
         }
-    }
+    }*/
 
     #about{
         width: 100%;
         height: 100vw;
         background: white;
         position: relative;
+    }
+    #contact{
+        width: 100%;
+        background: black;
+        position: relative;
+        height: 20vw;
     }
