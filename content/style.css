@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#borad{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#bar{
+    width: 5vw;
+    height: 100%;
+    position: fixed;
+    box-shadow: 0.1vw 0vw 3vw 0.1vw black;
+    z-index: 1;
+}
+#bar-center{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    z-index: 1;
+}
+.box-center{
+    width: 100%;
+    text-align: center;
+}
+.box-center a{
+    width: 100%;
+    height: 4vw;
+    display: block;
+    line-height: 4vw;
+    font-size: 1vw;
+    background: white;
+    text-decoration: none;
+    color: black;
+}
+.box-center a:hover{
+    background: rgba(168, 167, 167, 0.8);
+}
+#stay{
+    background: rgba(168, 167, 167, 0.8);
+}
+#box-home{
+    width: 100%;
+    position: absolute;
+    height: 2vw;
+    bottom: 0;
+    text-align: center;
+    line-height: 2vw;
+}
+#box-home a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2vw;
+    color:black;
+}
+#box-home:hover{
+    background: rgba(168, 167, 167, 0.8);
+}
+.box-center img{
+    width: 100%;
+    height: auto;
+    margin: 1vw 0 2vw 0.3vw;
+}
+
+
+/*Left tap*/
+#tap-bar{
+    position: fixed;
+    right: 0;
+    width: 0vw;
+    height: 100%;
+    background: white;
+    z-index: 1;
+    overflow: auto;
+    transition: 0.5s;
+}
+#slide{
+    width: 3vw;
+    height: 3vw;
+    background: yellowgreen;
+    position: fixed;
+    transition: 0.5s;
+    top: 50%;
+    right: -1.5%;
+    transform: translate(0,-50%);
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+#triangle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0.5vw;
+}
+#triangle:hover{
+    animation: move 0.7s linear infinite;
+}
+@keyframes move{
+    from {left:0.5vw;top:0;}
+    to {left:0vw;top:-0.5vw;}
+}
+#t1{
+    border-top:1vw solid transparent;
+    border-bottom: 1vw solid transparent;
+    border-right: 1vw solid black;
+    transform: rotate(45deg);
+    position: absolute;
+}
+#t2{
+    border-top:1vw solid transparent;
+    border-bottom: 1vw solid transparent;
+    border-right: 1vw solid yellowgreen;
+    transform: rotate(45deg);
+    position: absolute;
+    top:0.3vw;
+    left: 0.3vw;
+
+}
+#head-content{
+    width: 95%;
+    height: 2vw;
+    background: white;
+    position: relative;
+    margin: 1% 2.5% 2.5% 2.5%;
+}
+#head-content h1{
+    position: absolute;
+    top: -1vw;
+    font-size: 2vw;
+}
+.box-content{
+    width: 95%;
+    height: 10vw;
+    position: relative;
+    margin: 5% 2.5% 2.5% 2.5%;
+}
+.line{
+    width: 100%;
+    height: 0.1vw;
+    background: black;
+    margin: 2.5% 0 1% 0;
+}
+.box-head{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background: red;
+}
+.box-p{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: yellow;
+}

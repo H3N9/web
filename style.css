@@ -120,18 +120,30 @@ body{
         height: 5vw;
         position: relative;
     }
-    #line_break button{
+    #line_break .box-button{
         position: absolute;
-        top: 25%;
+        top: 21%;
         left: 23%;
         width: 15vw;
         height: 3.5vw;
         font-size: 1.5vw;
         background: white;
-        border: 0.2vw solid black;
-        cursor: pointer;
-        color: black;
+        text-align: center;
+        line-height: 3.2vw;
         transition: 0.3s;
+    }
+    #line_break .box-button a{
+        color: black;
+        display: block;
+        border: 0.2vw solid black;
+        text-decoration: none;
+    } 
+    #line_break .box-button:hover{
+        color: white;
+        background: black;
+    }
+    #line_break .box-button a:hover{
+        color: white;
     }
     .triangle{
         width: 0;
@@ -142,12 +154,7 @@ body{
         border-left: 1.5vw solid black;
         border-top: 0.75vw solid transparent;
         border-bottom: 0.75vw solid transparent;
-        
-    }
-    #line_break button:hover{
-        color: white;
-        background: black;
-    }
+    } 
     .row{
         width: 100%;
         background: white;
@@ -270,7 +277,7 @@ body{
         .ww{
             left: 10%;
         }
-        #line_break button{
+        #line_break .box-button{
             left: 30%;
         }
         .triangle{
@@ -289,4 +296,14 @@ body{
         background: white;
         position: relative;
         height: 10vw;
+    }
+    #contact img{
+        width: 5vw;
+        height: auto;
+        display:block;
+        margin: auto;
+    }
+    #contact h1{
+        padding-left: 3vw;
+        font-size: 2vw;
     }
