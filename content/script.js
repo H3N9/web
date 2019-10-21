@@ -4,9 +4,6 @@ var borad = map.getContext("2d");
 var map_image = new Image();
 map_image.src = "../img/map.png";
 
-var width = map.style.width;
-var height = map.style.height;
-
 function change1(){
     var content = document.querySelector('#tap-bar');
     var slide = document.querySelector('#slide');
@@ -23,8 +20,8 @@ function change1(){
 }
 
 setInterval(function(){
-    width = screen.availWidth+"px";
-    heigt = screen.availHeight+"px";
-    borad.drawImage(map_image, 0, 0, width, height);
+    map.style.width = screen.availWidth+"px";
+    map.style.height = screen.availHeight+"px";
+    borad.drawImage(map_image,0,0,1980,1080);
 
 }, 1000);
