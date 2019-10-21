@@ -6,17 +6,17 @@ body {font-family: Verdana, sans-serif; margin:0;}
     margin:auto;    
 }
 .line1, .line2{
-  border: 0.2vw solid #fff;
+  border: 2px solid #fff;
   width: 22vw;
   border-radius: 5px;
-  top: 3vw; 
+  top: 6vw; 
   position: absolute;
 }
 .line1{
   left: 15vw;  
 }
 .line2{
-  left: 62vw;
+  left: 63vw;
 }
 h1{
   text-align: center;
@@ -24,7 +24,7 @@ h1{
   font-size: 2.5vw;
 }
 .head{
-  padding-top: 0.2vw;
+  padding-top: 3vw;
 }
 .mySlides:nth-child(1){display: block;}
 img {vertical-align: middle;}
@@ -43,8 +43,8 @@ img {vertical-align: middle;}
   cursor: pointer;
   position: fixed;
   top: 50%;
-  height: 4vw;
-  width: 4vw;
+  height: 5vw;
+  width: 5vw;
   border: 0.8vw solid #fff;
   background: #000;
   margin-top: -22px;
@@ -53,16 +53,29 @@ img {vertical-align: middle;}
 }
 
 .next {
-  right: 2vw;
-  padding: 0 0 0 0.4vw;
+  right: 1.3vw;
+  padding: 0.5vw 0 0 0.7vw;
 }
 .prev{
-  left: 2vw;
-  padding: 0.4vw 0 0 0;
+  left: 1.3vw;
+  padding: 0.7vw 0 0 0.5vw;
+}
+.prev:hover {
+  animation: move 0.7s linear infinite;
+}
+.next:hover{
+  animation: move2 0.7s linear infinite;
+
 }
 
-
-
+@keyframes move{
+  from {left:1.3vw;}
+  to {left:0.6vw}
+}
+@keyframes move2{
+  from {right:1.3vw;}
+  to {right:0.6vw}
+}
 .arrow{
   height: 2vw;
   transform:rotate(-45deg);
@@ -76,12 +89,15 @@ img {vertical-align: middle;}
   position: absolute;
   top: 0;
 }
+
 .text{
   text-align: center;
 }
+
 p{
   font-size: 1vw;
 }
+
 .line{
   border: 1.5px solid #fff;
   border-radius: 5px;
@@ -90,9 +106,9 @@ p{
   width: 7vw;
 }
 .fram{
-  position: relative;
+  position: relative;  
   background: #000;
-  top: 3vw;
+  top: 5vh;
   height: auto;
 }
 .timeLine{
@@ -115,6 +131,8 @@ p{
   background-color: #717171;
 }
 
+
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -134,22 +152,17 @@ p{
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-@media screen and (max-width: 320px){
-  h1{
-    font-size:1px;
-    color: aqua;
-  }
-}
+
 @media screen and (max-width:1440px){
   .line{bottom: 3vw;}
 }
 @media screen and (max-width:1024px){
-  .line{bottom: 3.5vw;}
+  .line{bottom: 3.5vw;}  
 }
 @media screen and (max-width:768px){
+  .head{padding-top: 10vw;}
+  .line1, .line2{top: 13vw;}
+  .fram{top: 8vh;}
   .mySlides{
     width: 70%;
   }
@@ -158,6 +171,19 @@ p{
   }
 }
 @media screen and (max-width:500px){
+  .head{padding-top: 20vw;}
+  h1{font-size: 3.5vw;}
+  .line1, .line2{
+    top: 24.5vw;
+    border:1px solid #fff;  
+  }
+  .line1{
+    left: 11vw;
+  }
+  .line2{
+    left: 67vw;
+  }
+  .fram{top: 8vh;}
   .dot{
     width: 15px;
     height: 15px;
@@ -173,8 +199,29 @@ p{
   .line{bottom: 8vw;}
 }
 @media screen and (max-width:375px){
+  .head{padding-top: 31vw;}
+  .line1, .line2{
+    top: 35vw;
+  }
+  .line1{
+    left: 11vw;
+  }
+  .line2{
+    left: 67vw;
+  }
   .line{bottom: 8vw;}
 }
 @media screen and (max-width:320px){
+  .head{padding-top: 31vw;}
+  .line1, .line2{
+    top: 35.5vw;
+  }
+  .line1{
+    left: 11vw;
+  }
+  .line2{
+    left: 67vw;
+  }
   .line{bottom: 9vw;}
+  .fram{top: 6vh;}
 }
