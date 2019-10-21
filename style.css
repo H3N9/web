@@ -300,8 +300,10 @@ body{
     #contact img{
         width: 5vw;
         height: auto;
-        display:block;
-        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     #contact h1{
         padding-left: 3vw;

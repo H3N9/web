@@ -4,14 +4,19 @@ body{
     width: 100%;
     height: 100%;
 }
+#map{
+    position: absolute;
+    cursor: grab;
+}
 #borad{
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow:hidden;
 }
 
 #bar{
-    width: 5vw;
+    width: 7%;
     height: 100%;
     position: fixed;
     box-shadow: 0.1vw 0vw 3vw 0.1vw black;
@@ -47,10 +52,10 @@ body{
 #box-home{
     width: 100%;
     position: absolute;
-    height: 2vw;
+    height: 3vw;
     bottom: 0;
     text-align: center;
-    line-height: 2vw;
+    line-height: 3vw;
 }
 #box-home a{
     display: block;
