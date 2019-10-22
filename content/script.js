@@ -8,8 +8,8 @@ function change1(){
     var content = document.querySelector('#tap-bar');
     var slide = document.querySelector('#slide');
     if(tap){
-        content.style.width = "20vw";
-        slide.style.right = "18.5%";
+        content.style.width = "25vw";
+        slide.style.right = "23.5%";
         tap = 0;
     }
     else{
@@ -22,6 +22,5 @@ function change1(){
 setInterval(function(){
     map.style.width = screen.availWidth+"px";
     map.style.height = screen.availHeight+"px";
-    borad.drawImage(map_image,0,0,1980,1080);
 
 }, 1000);
