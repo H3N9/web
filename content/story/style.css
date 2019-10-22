@@ -7,6 +7,7 @@ body {font-family: Verdana, sans-serif; margin:0;}
 }
 .line1, .line2{
   border: 0.2vw solid #fff;
+  background: #fff;
   margin:3vw 0 0 0;
   width: 22vw;
   float: left;
@@ -63,6 +64,10 @@ img {vertical-align: middle;}
   left: 1.3vw;
   padding: 0.7vw 0 0 0.5vw;
 }
+.arrow:nth-child(1){
+  animation: move 0.7s linear infinite;
+  
+}
 .prev:hover {
   animation: move 0.7s linear infinite;
 }
@@ -100,12 +105,18 @@ img {vertical-align: middle;}
 p{
   font-size: 1vw;
 }
-
+.headTimeLine{
+  margin-bottom: 1vh;
+  position: relative;
+  width: 100%;
+  top: 0px;
+}
 .line{
   border: 1.5px solid #fff;
+  background: #fff;
   border-radius: 5px;
+  bottom: 1.2vw;
   position: relative;
-  bottom: 2.5vw;
   width: 7vw;
 }
 .fram{
@@ -115,14 +126,13 @@ p{
   height: auto;
 }
 .timeLine{
-  display: inline-block;
-  
+  display: inline-block;  
 }
 .dot {
   cursor: pointer;
   height: 2.5vw;
   width: 2.5vw;
-  margin: -5px 1vw 3vh 1vw;
+  margin: 0 1vw 0 1vw;
   background-color: rgb(250, 250, 250);
   border-radius: 50%;
   display: inline-block;
@@ -133,8 +143,6 @@ p{
 .active, .dot:hover {
   background-color: #717171;
 }
-
-
 
 /* Fading animation */
 .fade {
@@ -156,12 +164,10 @@ p{
 
 /* On smaller screens, decrease text size */
 
-@media screen and (max-width:1440px){
-  .line{bottom: 3vw;}
-}
-@media screen and (max-width:1024px){
+
+/* @media screen and (max-width:1024px){
   .line{bottom: 3.5vw;}  
-}
+} */
 @media screen and (max-width:768px){
   /* .head{padding-top: 10vw;}
   .line1, .line2{top: 13vw;} */
@@ -169,15 +175,14 @@ p{
   .mySlides{
     width: 70%;
   }
-  .line{
+  /* .line{
     bottom: 4.5vw;
-  }
+  } */
 }
 @media screen and (max-width:500px){
-  .head{left: 7%;}
-  
+  .head{left: 8%;}  
   h1{font-size: 3.5vw;}
-  .line1, .line2{
+  .line1, .line2{    
     border: 0.4vw solid #fff;
     margin-top: 5%;
   }
@@ -196,15 +201,15 @@ p{
     width: 15px;
     height: 15px;
   }
-  .line{
+  /* .line{
     bottom: 7vw;
-  }
+  } */
 }
 @media screen and (max-width:375px){
   .mySlides{
     width: 80%;
   }
-  .line{bottom: 8vw;}
+  /* .line{bottom: 8vw;} */
 }
 @media screen and (max-width:375px){
   /* .head{padding-top: 31vw;}
@@ -217,7 +222,7 @@ p{
   .line2{
     left: 67vw;
   } */
-  .line{bottom: 8vw;}
+  /* .line{bottom: 8vw;} */
 }
 @media screen and (max-width:320px){
   /* .head{padding-top: 31vw;}
@@ -230,6 +235,6 @@ p{
   .line2{
     left: 67vw;
   } */
-  .line{bottom: 9vw;}
+  /* .line{bottom: 9vw;} */
   .fram{top: 6vh;}
 }
