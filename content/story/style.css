@@ -9,7 +9,7 @@ body {font-family: Verdana, sans-serif; margin:0;}
   border: 0.2vw solid #fff;
   background: #fff;
   margin:3vw 0 0 0;
-  width: 16vw;
+  width: 20vw;
   float: left;
   border-radius: 5px;
 }
@@ -40,12 +40,12 @@ img {vertical-align: middle;}
   position: relative;
   background: #000;
   float: left;
-  width: 80%;
+  width: 90%;
 }
 .right, .left{
   position: relative;
   background: #fff;
-  width: 10%;
+  width: 5%;
   height: 100%;
   float: left;
 }
@@ -70,23 +70,21 @@ img {vertical-align: middle;}
 }
 
 .next {
-  right: 7.4vw;
+  right: 2.4vw;
   padding: 0.5vw 0 0 0.7vw;
 }
 .prev{
-  left: 7.4vw;
+  left: 2.4vw;
   padding: 0.7vw 0 0 0.5vw;
 }
-.arrow:nth-child(1){
-  animation: move 0.7s linear infinite;
-  
+.arrow:hover{
+  animation: move 0.7s linear infinite;  
 }
 .prev:hover {
   animation: move 0.7s linear infinite;
 }
 .next:hover{
   animation: move2 0.7s linear infinite;
-
 }
 
 @keyframes move{
@@ -100,18 +98,17 @@ img {vertical-align: middle;}
 .arrow{
   height: 2vw;
   transform:rotate(-45deg);
+  position: absolute;
 }
 .head_text{
   font-size: 2vw;
 }
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+.back{
+  left: 1vw;
+  top: 1.5vw;
   position: absolute;
-  top: 0;
 }
+
 .text{
   width: 100%;
   padding: 2% 10%;
@@ -170,7 +167,7 @@ p{
   width: 1.8vw;
   margin-bottom: 0.5vw;
 }
-.vfar:hover{
+.vfar:hover, .far:hover{
   height: 3.2vw;
   width: 3.2vw;
   margin-bottom: 0;  
@@ -179,11 +176,6 @@ p{
   height: 2.2vw;
   width: 2.2vw;
   margin-bottom: 0.3vw;  
-}
-.far:hover{
-  height: 3.2vw;
-  width: 3.2vw;
-  margin-bottom: 0;  
 }
 .active, .dot:hover {
   
