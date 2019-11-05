@@ -67,3 +67,7 @@ function scroll(){
         row[1].style.opacity = "1";
     }
 }
+window.addEventListener("load", function (){
+    const loader = this.document.querySelector('.loader');
+    loader.className += " hidden";
+});
