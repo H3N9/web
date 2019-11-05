@@ -7,7 +7,6 @@ html{
 #board{
     width:100%;
     height:auto;
-    overflow: auto;
 }
 
     /*Navigater bar*/
@@ -461,7 +460,28 @@ html{
         height: 50vw;
         background: black;
         position: relative;
+        color: white;
     }
+    .head-about{
+        width: 100%;
+        height: 10%;
+    }
+    .head-about h1{
+        position: absolute;
+        font-size: 3.5vw;
+        left: 2vw;
+        top: -1vw;
+    }
+    .row-about{
+        width: 100%;
+        height: 45%;
+    }
+    .row-about h1{
+        position: absolute;
+        left: 5vw;
+        font-size: 2.5vw;
+    }
+
     #contact{
         width: 100%;
         background: white;
@@ -472,16 +492,17 @@ html{
         width: 100%;
         position: relative;
         height: 50%;
+        overflow: hidden;
         
     }
     #line-dashed{
         background: black;
-        width: 0;
+        width: 0vw;
         height: 0.3vw;
         position: absolute;
-        bottom: 1vw;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%,0%);
+        bottom: 1vw;
         transition: 2s;
     }
     .con-text h1{
@@ -524,26 +545,17 @@ html{
 
 .loader{
     position: fixed;
-    z-index: 200;
-    top: 0;
-    left: 0;
+    z-index: 5;
     width: 100%;
     height: 100%;
     background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: 2s;
+    overflow: hidden;
   }
-  .loader > img{
-    width: 200px;
-  }
-  .loader.hidden{
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes fadeOut {
-    100%{
-        opacity: 0;
-        visibility: hidden;
-    }
+  .loader img{
+      width: 20vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
   }

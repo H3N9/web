@@ -38,7 +38,7 @@ function scroll(){
 
     
     if(x>rect.height-screen.availHeight-50){
-        dash.style.width = "90%";
+        dash.style.width = "90vw";
     }else{
         dash.style.width = "0";
     }
@@ -68,6 +68,6 @@ function scroll(){
     }
 }
 window.addEventListener("load", function (){
-    const loader = this.document.querySelector('.loader');
-    loader.className += " hidden";
+    var loader = document.querySelector('.loader');
+    loader.style.height = "0";
 });
