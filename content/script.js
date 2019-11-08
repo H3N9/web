@@ -1,8 +1,5 @@
 var tap = 1;
-var map = document.querySelector('#map');
-var borad = map.getContext("2d");
-var map_image = new Image();
-map_image.src = "../img/map.png";
+
 
 function change1(){
     var content = document.querySelector('#tap-bar');
@@ -18,9 +15,3 @@ function change1(){
         tap = 1;
     }
 }
-
-setInterval(function(){
-    map.style.width = screen.availWidth+"px";
-    map.style.height = screen.availHeight+"px";
-
-}, 1000);
