@@ -37,7 +37,7 @@ function scroll(){
     var rect = board.getBoundingClientRect();
 
     
-    if(x>rect.height-screen.availHeight-50){
+    if(x>rect.height-screen.availHeight-100){
         dash.style.width = "90vw";
     }else{
         dash.style.width = "0";
