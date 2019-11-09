@@ -5,14 +5,14 @@ function myMenu() {
     var h3 = document.getElementById("ham3");
     
 
-    if (x.style.height == "35vw") {
-        x.style.height = "0";
+    if (x.style.width == "35vw") {
+        x.style.width = "0vw";
         h1.style.transform = "rotate(0)";
         h2.style.opacity = "100";
         h3.style.transform = "rotate(0)";
 
     }else{
-        x.style.height = "35vw";
+        x.style.width = "35vw";
         h1.style.transform = "rotate(-45deg) translate(-1.8vw, 0.5vw)";
         h2.style.opacity = "0";
         h3.style.transform = "rotate(45deg) translate(-1.8vw, -0.5vw)";

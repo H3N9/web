@@ -149,12 +149,12 @@ body {
   color: white;
 }
 .box-text h1{
-  margin: 1vw 0 0 20vw;
-  font-size: 2.5em;
+  margin: 1vw 2vw 0 20vw;
+  font-size: 3.5vw
   
 }
 .box-text h2{
-  font-size: 1.8em;
+  font-size: 2.5vw;
   margin-right: 15%;
 }
 .slideshow-container {  
@@ -204,14 +204,12 @@ body {
   margin-top: 3vw;
   font-size: 1.3vw;
 }
-.tapb{
+.space{
   margin-right: 3vw;
 }
-.tapb .time{
+#tapb .time{
   margin-top: 2vw;
-}
-.tapm{
-  margin-right: 3vw;
+  font-size: 1.5vw;
 }
 .dot {
   cursor: pointer;
@@ -248,12 +246,41 @@ body {
   display: block;
   margin: auto;
 }
+.text{
+  font-size: 1.5vw;
+  color: white;
+}
+.text p{
+  margin: 2vw 12vw 2vw 12vw;
+  text-indent: 7em;
+}
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+::-webkit-scrollbar-track {
+  background: white;
+  box-shadow: inset 0vw 0.1vw 0.3vw black;
+}
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 3vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 @media screen and (max-width: 600px){
   .left, .right{
     display: none;
   }
+  .space{
+    margin-right: 0vw;
+    background: red;
+  }
   .box-text h1{
     font-size: 7.5vw;
+  }
+  .box-text h2{
+    font-size: 7vw;
   }
   .dot{
     height: 8vw;
@@ -264,7 +291,7 @@ body {
     width: 95%;
   }
   .fram{
-    height: 15vw;
+    height: 22vw;
   }
   .big{
     height: 10.2vw;
@@ -274,5 +301,26 @@ body {
     height: 9.6vw;
     width: 9.6vw;
   }
-  
+  .box-time{
+    width: 98%;
+    left: 2%;
+  }
+  .time{
+    margin-top: 0vw;
+    font-size: 3vw;
+  }
+  #tapb .time{
+    margin-top: -2vw;
+    font-size: 3vw;
+  }
+  .time-text{
+    width: 17vw;
+    margin-right: 2vw;
+  }
+  .text{
+    font-size: 2.5vw;
+  }
+  .text p{
+    margin: 3vw 5vw 3vw 5vw;
+  }
 }
