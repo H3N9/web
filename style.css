@@ -151,7 +151,7 @@ html{
     }
     #rush{
         position: fixed;
-        display: none;
+        display: block;
         bottom: 5%;
         right: 1%;
         width: 8vw;
@@ -191,7 +191,9 @@ html{
 }
 
     
-    
+    #rush{
+        display: none;
+    }
     /* Image and text header*/
     #bg1{
         position: relative;
