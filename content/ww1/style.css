@@ -38,21 +38,29 @@ body {
 }
 .prev, .next {
   position: absolute;
-  height: 5vw;
-  width: 5vw;
+  height: 6vw;
+  width: 6vw;
   top: 18%;
-  background: black;
+  background: white;
   transform: rotate(45deg);
   z-index: 1;
-  border: 0.8vw solid white;
+  cursor: pointer;
+}
+.inNext{
+  position: absolute;
+  height: 4.5vw;
+  left: 14%;
+  width: 4.5vw;
+  top: 14.5%;
+  background: black;
+  z-index: 1;
   cursor: pointer;
 }
 .next{
-  right: 33%;
+  right: 40%;
 }
 .prev{
-  left: 33%;
-  
+  left: 40%;  
 }
 
 
