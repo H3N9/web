@@ -133,7 +133,6 @@ html{
         right: 0;
         transition: 1s;
         overflow: hidden;
-        top: 12vw;
     }
     .hamBer{
         position: absolute;
@@ -196,33 +195,40 @@ html{
     #bg1{
         position: relative;
         background: #f1f1ef;
-    }
-    #img_h{
         width: 100%;
-        height: auto;
+        height: 40vw;
     }
-    .img_h2{
+    .img_h{
         width: 100%;
-        height: auto;
-        display: none;
+        height: 100%;
+    }
+    .img-head{
+        width: 50%;
+        position: relative;
+        float:left;
     }
     #bg_text{
-        position: absolute;
-        width: 30%;
-        top: 10vw;
-        left: 12%;
-        font-size: 2vw;
+        position: relative;
+        float:left;
+        width: 50%;
+        height: 100%;
         font-family: 'Anton', sans-serif;
+        font-size: 2vw;
+    }
+    #bg_text h1{
+        position: absolute;
+        top: 10vw;
+        left: 10vw;
     }
     #bg2_text{
         position: absolute;
-        top: 12vw;
-        left: 12%;
+        top: 55%;
+        left: 30%;
     }
     #bg3_text{
         position: absolute;
-        top: 15vw;
-        left: 20%;
+        top: 65%;
+        left: 35%;
     }
     /* Critical content*/
     #content{
@@ -392,6 +398,175 @@ html{
         color: white;
         font-family: 'Oswald', sans-serif;
     }
+    #about{
+        width: 100%;
+        height: 50vw;
+        background: black;
+        position: relative;
+    }
+    .head-about{
+        width: 100%;
+        height: 10%;
+    }
+    .head-about h1{
+        color: white;
+        position: absolute;
+        font-size: 3.5vw;
+        left: 2vw;
+        top: -1vw;
+    }
+    .row-about{
+        width: 100%;
+        height: 45%;
+    }
+    .row-about h1{
+        position: absolute;
+        left: 5vw;
+        font-size: 2.5vw;
+        color: white;
+    }
+    .img-dev{
+        float: left;
+        position: relative;
+        bottom: -6vw;
+        margin-left: 0.5vw;
+        width: 15vw;
+        height: 70%;
+    }
+    .img-dev img{
+        width: 100%;
+        height: 100%;
+        filter: grayscale(65%);
+        -webkit-filter: grayscale(65%);
+        transition: 1s;
+    }
+    .img-dev img:hover{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+    .dev-con{
+        float: left;
+        position: relative;
+        bottom: -6vw;
+        width: 0vw;
+        height: 70%;
+        transition: 1s;
+        overflow: hidden;
+    }
+    .dev-text{
+        width: 100%;
+        height: 85%;
+        background: white;
+        position: relative;
+    }
+    .head-dev h2{
+        position: absolute;
+        color: white;
+        margin: 0 0 0 1vw;
+        font-size: 2vw;
+    }
+    .head-dev{
+        position: relative;
+        width: 99%;
+        height: 15%;
+        background: black;
+        border-top: 0.1vw solid white;
+        border-right: 0.1vw solid white;;
+    }
+    .dev-text h3{
+        font-size: 1.2vw;
+        margin-left: 1vw;
+    }
+    #first{
+        margin-left: 8vw;
+    }
+    .img-dev:hover + .dev-con{
+        width: 14vw;
+    }
+
+
+    /*Cotact*/
+
+    #contact{
+        width: 100%;
+        background: white;
+        position: relative;
+        height: 15vw;
+    }
+    .con-text{
+        width: 100%;
+        position: relative;
+        height: 50%;
+        overflow: hidden;
+        
+    }
+    #line-dashed{
+        background: black;
+        width: 0vw;
+        height: 0.3vw;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0%);
+        bottom: 1vw;
+        transition: 2s;
+    }
+    .con-text h1{
+        top: -2vw;
+        left: 2vw;
+        position: absolute;
+        font-family: 'Oswald', sans-serif;
+        font-size: 3vw;
+    }
+    .con-img{
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    .con-img img{
+        width: 7vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: 0.5s;
+    }
+    .con-img img:hover{
+        width: 8vw;
+    }
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+::-webkit-scrollbar-track {
+    background: white;
+    box-shadow: inset 0vw 0.1vw 0.3vw black;
+}
+::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 3vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+.loader{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 2s;
+    overflow: hidden;
+    top:0;
+  }
+  .loader img{
+      width: 20vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+
 /*Tablet*/
     @media screen and (max-width: 768px){
         .box{
@@ -476,21 +651,18 @@ html{
             height: 50%;
             width: 100%;
         }
-        .img-head .img_h2{
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
           #bg_text{
             position: relative;
             left:5%;
             text-align: left;
-            width: 80%;
+            width: 95%;
             height: 50%;
             font-size: 6vw;
           }
           #bg_text h1{
               position: absolute;
+              top: 5%;
+              left: 3%;
           }
           .barHam{
               width: 100%;
@@ -531,112 +703,51 @@ html{
           #tank{
               display: none;
           }
+          #about{
+            height: 100vw;
+          }
+          .head-about{
+            width: 100%;
+            height: 10%;
+        }
+        .head-about h1{
+            font-size: 8vw;
+            left: 3vw;
+            top: -3vw;
+        }
+        .row-about h1{
+            position: absolute;
+            left: 7vw;
+            font-size: 5vw;
+        }
+        #contact{
+            height: 40vw;
+        }
+        #line-dashed{
+            background: black;
+            width: 0vw;
+            height: 1vw;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0%);
+            bottom: 2vw;
+            transition: 2s;
+        }
+        .con-text h1{
+            top: -4vw;
+            left: 4vw;
+            font-size: 7vw;
+        }
+        .con-img img{
+            width: 15vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            transition: 0.5s;
+        }
+        .con-img img:hover{
+            width: 20vw;
+        }
     }
-
-    #about{
-        width: 100%;
-        height: 50vw;
-        background: black;
-        position: relative;
-        color: white;
-    }
-    .head-about{
-        width: 100%;
-        height: 10%;
-    }
-    .head-about h1{
-        position: absolute;
-        font-size: 3.5vw;
-        left: 2vw;
-        top: -1vw;
-    }
-    .row-about{
-        width: 100%;
-        height: 45%;
-    }
-    .row-about h1{
-        position: absolute;
-        left: 5vw;
-        font-size: 2.5vw;
-    }
-
-    #contact{
-        width: 100%;
-        background: white;
-        position: relative;
-        height: 15vw;
-    }
-    .con-text{
-        width: 100%;
-        position: relative;
-        height: 50%;
-        overflow: hidden;
-        
-    }
-    #line-dashed{
-        background: black;
-        width: 0vw;
-        height: 0.3vw;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,0%);
-        bottom: 1vw;
-        transition: 2s;
-    }
-    .con-text h1{
-        top: -2vw;
-        left: 2vw;
-        position: absolute;
-        font-family: 'Oswald', sans-serif;
-        font-size: 3vw;
-    }
-    .con-img{
-        width: 100%;
-        height: 50%;
-        position: relative;
-    }
-    .con-img img{
-        width: 7vw;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        transition: 0.5s;
-    }
-    .con-img img:hover{
-        width: 8vw;
-    }
-::-webkit-scrollbar {
-    width: 0.5vw;
-}
-::-webkit-scrollbar-track {
-    background: white;
-    box-shadow: inset 0vw 0.1vw 0.3vw black;
-}
-::-webkit-scrollbar-thumb {
-    background: black; 
-    border-radius: 3vw;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
-
-
-.loader{
-    position: fixed;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    background: black;
-    transition: 2s;
-    overflow: hidden;
-    top:0;
-  }
-  .loader img{
-      width: 20vw;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-  }
 

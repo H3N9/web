@@ -35,9 +35,8 @@ function scroll(){
     var board = document.querySelector("#board");
     var x = document.body.scrollTop;
     var rect = board.getBoundingClientRect();
-
-    
-    if(x>rect.height-screen.availHeight-100){
+    var rect6 = document.getElementById("contact").getBoundingClientRect();
+    if(x>rect.height-rect6.height-screen.availHeight){
         dash.style.width = "90vw";
     }else{
         dash.style.width = "0";

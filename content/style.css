@@ -93,7 +93,7 @@ body{
     position: fixed;
     transition: 0.5s;
     top: 50%;
-    right: -2vw;
+    right: -1vw;
     transform: translate(0,-50%);
     transform: rotate(-45deg);
     cursor: pointer;
@@ -202,9 +202,76 @@ body{
 }
 @media screen and (max-width: 800px){
     #bar{
-        width: 20%;
+        width: 15%;
+    }
+    #bar-slide{
+        width: 30%;
+    }
+    #slide{
+        right: 28%;
+    }
+    .box-center a{
+        font-size: 3.5vw;
+        height: 6vw;
+        line-height: 6vw;
+    }
+    #box-home{
+        height: 6vw;
+    }
+    #box-home a{
+        font-size: 3.5vw;
+        line-height: 6vw;
+    }
+    .box-content{
+        height: 20vw;
+    }
+    .box-head a{
+        font-size: 2.5vw;
+    }
+    .box-p a{
+        font-size: 2vw;
+    }
+    #head-content{
+        height: 5vw;
+
+    }
+    #head-content h1{
+        top: -1.5vw;
+        font-size: 3vw;
     }
 }
-@media screen and (max-width: 500px){
-    
+@media screen and (max-width: 600px){
+    .slide{
+        display: none;
+    }
+    #bar{
+        width: 20%;
+    }
+    #bar-slide{
+        width: 78vw; 
+    }
+    .tap-bar{
+        top:50%;
+        left:22%;
+        width: 78vw;
+        height: 100%;
+        box-shadow: 0.5vw 0 0.8vw 0.1vw black;
+    }
+    #head-content{
+        height: 9vw;
+    }
+    #head-content h1{
+        top: -4vw;
+        font-size: 7vw;
+    }
+    .box-content{
+        height: 40vw;
+    }
+    .box-head a{
+        font-size: 6vw;
+        left: 3vw;
+    }
+    .box-p a{
+        font-size: 4vw;
+    }
 }
