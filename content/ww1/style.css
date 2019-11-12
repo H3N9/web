@@ -151,14 +151,30 @@ body {
   overflow: auto;
   clear: both;
 }
+#mb-back div{
+  display: none;
+}
+#mb-back{
+  width: 15%;
+  height: 18vw;
+  position: relative;
+  display: block;
+  float: left;
+}
 .box-text{
   width: 50%;
   float: left;
   height: auto;
   color: white;
 }
-.box-text h1{
-  margin: 1vw 2vw 0 20vw;
+#text-head{
+  width: 35%;
+  float: left;
+  height: auto;
+  color: white;
+}
+#text-head h1{
+  margin: 1vw 2vw 0 4vw;
   font-size: 3.5vw
   
 }
@@ -277,15 +293,39 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+@media screen and (max-width: 850px){
+  .text{
+    font-size: 2vw;
+  }
+}
 @media screen and (max-width: 600px){
   .left, .right{
     display: none;
   }
-  .space{
-    margin-right: 0vw;
-    background: red;
+  #mb-back div{
+    display: block;
+    height: 8vw;
+    width: 8vw;
+    border-left: 2vw solid white;
+    border-top: 2vw solid white;
+    transform: rotate(-45deg);
+    margin: 4.5vw 0 0 8vw;
+    transition: 0.5s;
+    cursor: pointer;
   }
-  .box-text h1{
+  #mb-back div:hover{
+    margin: 4.5vw 0 0 4vw;
+  }
+  .shapes2{
+    position: absolute;
+    border: solid #fff;
+    border-width: 0.5vw 0 0 0.5vw;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  #text-head h1{
     font-size: 7.5vw;
   }
   .box-text h2{
@@ -326,8 +366,11 @@ body {
     width: 17vw;
     margin-right: 2vw;
   }
+  .space{
+    margin-right: 2.8vw;
+  }
   .text{
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
   .text p{
     margin: 3vw 5vw 3vw 5vw;

@@ -43,14 +43,16 @@ function scroll(){
     }
 
     //show rush
-    var rush = document.querySelector("#rush");
+    var rush = document.getElementsByClassName("rush")[0];
     var bg1 = document.querySelector("#bg1");
     var rect1 = bg1.getBoundingClientRect();
     if(x>rect1.height){
-        rush.style.display = "block";
+        rush.setAttribute("id", "rush");
     }
     else{
-        rush.style.display = "none";
+        rush.removeAttribute("id");
+        
+        
     }
 
     //show row
