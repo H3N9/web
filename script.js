@@ -73,3 +73,17 @@ window.addEventListener("load", function (){
     var display = document.querySelector("#board");
     loader.style.height = "0";
 });
+
+var countDev = 0;
+
+function showDev(){
+    var x = document.getElementsByClassName('deverlop')[0];
+    if(countDev==0){
+        x.setAttribute("id", "devm");
+        countDev = 1;
+    }
+    else{
+        countDev = 0;
+        x.removeAttribute("id");
+    }
+}

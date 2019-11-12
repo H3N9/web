@@ -304,13 +304,13 @@ html{
     }
     #about{
         width: 100%;
-        height: 80vw;
+        height: 40vw;
         background: black;
         position: relative;
     }
     .head-about{
         width: 100%;
-        height: 10%;
+        height: 20%;
     }
     .head-about h1{
         color: white;
@@ -322,17 +322,59 @@ html{
     }
     .row-about{
         width: 100%;
-        height: 35%;
+        height: 60%;
     }
-    #deverlop{
+    #dev-slide{
         width: 100%;
-        height: 55%;
+        height: 20%;
+        position: relative;
+    }
+    #dev-slide h1{
+        position: absolute;
+        font-family: 'Oswald', sans-serif;
+        left: 5vw;
+        font-size: 3vw;
+        color: white;
+        top: -2vw;
+
+    }
+    .deverlop{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 0;
+        transition: 1s;
+    }
+    #devm{
+        height: 40vw;
     }
     .head-dev-box{
         width: 100%;
         height: 10%;
         background: white;
         position: relative;
+    }
+    .cl-dev{
+        width: 15%;
+        height: 55%;
+        border: 0.3vw solid white;
+        left: 20%;
+        margin-top: 0.5vw;
+        background: black;
+        position: absolute;
+        text-align: center;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .cl-dev h2{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        margin-top: 0vw;
+        font-size: 2.5vw;
+    }
+    .cl-dev:hover{
+        border: 0.3vw solid black;
+        background: rgba(100, 100, 100, 0.5);
     }
     .head-dev-box h1{
         position: absolute;
@@ -350,9 +392,17 @@ html{
         color: white;
     }
     .row-dev{
-        height: 42.5%;
+        height: 45%;
         width: 100%;
         background: white;
+        position: relative;
+        overflow: hidden;
+    }
+    .line-end{
+        height: 2vw;
+        width: 100%;
+        background: black;
+        position: relative;
     }
     .img-dev{
         float: left;
@@ -361,13 +411,13 @@ html{
         margin-left: 4%;
     }
     .img-dev img{
-        width: 100%;
+        width: 90%;
         border-radius: 50%;
         box-shadow: 0.1vw 0vw 1vw 0.01vw black;
         filter: grayscale(65%);
         -webkit-filter: grayscale(65%);
         transition: 1s;
-        margin-top: 1%;
+        margin-top: 7%;
     }
     .img-dev img:hover{
         filter: grayscale(0%);
@@ -382,8 +432,9 @@ html{
         margin-left: 1.5vw;
     }
     .box-border{
-        width: 30%;
-        height: 40%;
+        width: 40%;
+        height: 60%;
+        top: 1vw;
         position: absolute;
         background: white;
         border-top-left-radius: 1vw;
@@ -394,14 +445,19 @@ html{
         position: absolute;
         width: 85%;
         left: 15%;
-        height: 40%;
+        height: 60%;
+        top: 1vw;
         background: rgba(0, 0, 0, 0.8);
         border-top-right-radius: 1vw;
         border-bottom-right-radius: 1vw;
-    }
-    .dev-con h3{
         text-align: center;
+    }
+    .box-dev-text h2{
         margin: 0;
+        color: white;
+        margin-top: 0.3vw;
+        font-size: 1.8vw;
+        font-family: 'Oswald', sans-serif;
     }
 
     /*Cotact*/
@@ -721,31 +777,76 @@ html{
               display: none;
           }
           #about{
-            height: 150vw;
+            height: 80vw;
           }
           .head-about{
             width: 100%;
-            height: 10%;
+            height: 20%;
+        }
+        #dev-slide h1{
+            font-size: 5vw;
+        }
+        .cl-dev{
+            left: 30%;
+            width: 25%;
+            top: 8%;
+        }
+        .cl-dev h2{
+            font-size: 4vw;
+            margin-top: 1vw;
         }
         .head-about h1{
             font-size: 8vw;
             left: 3vw;
             top: -3vw;
         }
-        #deverlop{
-            height: 55%;
+        .head-dev-box{
+            height: 5%;
         }
-        .row-about{
-            height: 35%;
-        }
-        #deverlop h1{
-            left: 7vw;
+        .head-dev-box h1{
             font-size: 5vw;
         }
         .row-about h1{
             left: 7vw;
             font-size: 5vw;
         }
+        #devm{
+            height: 180vw;
+        }
+        .row-dev{
+            width: 50%;
+            height: 95%;
+            float:left;
+        }
+        .img-dev{
+            height: 19%;
+            width: 100%;
+            margin-top: 2%;
+        }
+        .img-dev img{
+            width: 60%;
+            margin-top: 1vw;
+            margin-left: 1vw;
+        }
+        .dev-con{
+            height: 19%;
+            width: 100%;
+            margin-top: 2%;
+        }
+        .box-border{
+            margin-top: 5vw;
+        }
+        .box-dev-text{
+            margin-top: 5vw;
+            width: 80%;
+        }
+        .box-dev-text h2{
+            font-size: 4vw;
+        }
+        .line-end{
+            height: 8vw;
+        }
+
         #contact{
             height: 40vw;
         }
