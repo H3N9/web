@@ -275,6 +275,9 @@ body {
   font-size: 1.5vw;
   color: white;
 }
+.text h3{
+  margin: 2vw 12vw -1vw 12vw;
+}
 .text p{
   margin: 2vw 12vw 2vw 12vw;
   text-indent: 7em;
