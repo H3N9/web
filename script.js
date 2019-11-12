@@ -70,5 +70,6 @@ function scroll(){
 }
 window.addEventListener("load", function (){
     var loader = document.querySelector('.loader');
+    var display = document.querySelector("#board");
     loader.style.height = "0";
 });
