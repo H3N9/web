@@ -7,6 +7,7 @@ html{
 #board{
     width:100%;
     height:auto;
+    transition: 8s;
 }
 
     /*Navigater bar*/
@@ -164,6 +165,7 @@ html{
         text-align: center;
         line-height: 3.2vw;
         transition: 0.3s;
+        font-family: 'Anton', sans-serif;
     }
     .line_break .box-button a{
         color: black;
@@ -302,7 +304,7 @@ html{
     }
     #about{
         width: 100%;
-        height: 50vw;
+        height: 80vw;
         background: black;
         position: relative;
     }
@@ -313,44 +315,59 @@ html{
     .head-about h1{
         color: white;
         position: absolute;
-        font-size: 3.5vw;
+        font-size: 5vw;
         left: 2vw;
-        top: -1vw;
+        top: -3vw;
+        font-family: 'Oswald', sans-serif;
     }
     .row-about{
         width: 100%;
-        height: 45%;
+        height: 35%;
     }
     #deverlop{
         width: 100%;
-        height: 45%;
+        height: 55%;
     }
-    #deverlop h1{
+    .head-dev-box{
+        width: 100%;
+        height: 10%;
+        background: white;
+        position: relative;
+    }
+    .head-dev-box h1{
         position: absolute;
         left: 5vw;
-        font-size: 2.5vw;
-        color: white;
+        font-size: 3vw;
+        top: -2.5vw;
+        color: black;
+        font-family: 'Oswald', sans-serif;
     }
     .row-about h1{
         position: absolute;
+        font-family: 'Oswald', sans-serif;
         left: 5vw;
-        font-size: 2.5vw;
+        font-size: 3vw;
         color: white;
+    }
+    .row-dev{
+        height: 42.5%;
+        width: 100%;
+        background: white;
     }
     .img-dev{
         float: left;
         position: relative;
-        bottom: -6vw;
-        margin-left: 0.5vw;
         width: 15vw;
-        height: 70%;
+        margin-left: 4%;
     }
     .img-dev img{
         width: 100%;
-        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0.1vw 0vw 1vw 0.01vw black;
         filter: grayscale(65%);
         -webkit-filter: grayscale(65%);
         transition: 1s;
+        margin-top: 1%;
     }
     .img-dev img:hover{
         filter: grayscale(0%);
@@ -359,45 +376,33 @@ html{
     .dev-con{
         float: left;
         position: relative;
-        bottom: -6vw;
-        width: 0vw;
-        height: 70%;
+        width: 18vw;
+        height: 100%;
         transition: 1s;
-        overflow: hidden;
+        margin-left: 1.5vw;
     }
-    .dev-text{
-        width: 100%;
-        height: 85%;
-        background: white;
-        position: relative;
-    }
-    .dev-text h3{
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 1vw;
-        font-size: 1.5vw;
-    }
-    .head-dev h2{
+    .box-border{
+        width: 30%;
+        height: 40%;
         position: absolute;
-        color: white;
-        margin: 0 0 0 1vw;
-        font-size: 2vw;
+        background: white;
+        border-top-left-radius: 1vw;
+        border-bottom-left-radius: 1vw;
+        box-shadow: 0 0 0.8vw 0vw black;
     }
-    .head-dev{
-        position: relative;
-        width: 99%;
-        height: 15%;
-        background: black;
-        border-top: 0.1vw solid white;
-        border-right: 0.1vw solid white;;
+    .box-dev-text{
+        position: absolute;
+        width: 85%;
+        left: 15%;
+        height: 40%;
+        background: rgba(0, 0, 0, 0.8);
+        border-top-right-radius: 1vw;
+        border-bottom-right-radius: 1vw;
     }
-    #first{
-        margin-left: 8vw;
+    .dev-con h3{
+        text-align: center;
+        margin: 0;
     }
-    .img-dev:hover + .dev-con{
-        width: 14vw;
-    }
-
 
     /*Cotact*/
 
@@ -447,19 +452,20 @@ html{
     .con-img img:hover{
         width: 8vw;
     }
-::-webkit-scrollbar {
-    width: 0.5vw;
-}
-::-webkit-scrollbar-track {
-    opacity: 0;
-}
-::-webkit-scrollbar-thumb {
-    background: black; 
-    border-radius: 3vw;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
+    ::-webkit-scrollbar {
+        width: 0.5vw;
+      }
+      ::-webkit-scrollbar-track {
+        background: white;
+        box-shadow: inset 0vw 0.1vw 0.3vw black;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: black; 
+        border-radius: 3vw;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
 
 
 .loader{
@@ -739,70 +745,6 @@ html{
         .row-about h1{
             left: 7vw;
             font-size: 5vw;
-        }
-        .img-dev{
-            float: left;
-            position: relative;
-            bottom: -12vw;
-            margin-left: 1vw;
-            margin-bottom: 2vw;
-            width: 25vw;
-            height: 40%;
-        }
-        .img-dev img{
-            width: 100%;
-            height: 100%;
-            filter: grayscale(65%);
-            -webkit-filter: grayscale(65%);
-            transition: 1s;
-        }
-        .img-dev img:hover{
-            filter: grayscale(0%);
-            -webkit-filter: grayscale(0%);
-        }
-        .dev-con{
-            float: left;
-            position: relative;
-            bottom: -12vw;
-            width: 0vw;
-            height: 40%;
-            transition: 1s;
-            overflow: hidden;
-        }
-        .dev-text{
-            width: 100%;
-            height: 85%;
-            background: white;
-            position: relative;
-        }
-        .dev-text h3{
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 1vw;
-            font-size: 1.5vw;
-        }
-        .head-dev h2{
-            position: absolute;
-            color: white;
-            margin: 0 0 0 1vw;
-            font-size: 2vw;
-        }
-        .head-dev{
-            position: relative;
-            width: 99%;
-            height: 15%;
-            background: black;
-            border-top: 0.1vw solid white;
-            border-right: 0.1vw solid white;;
-        }
-        #first{
-            margin-left: 23.5vw;
-        }
-        #second{
-
-        }
-        .img-dev:hover + .dev-con{
-            width: 22vw;
         }
         #contact{
             height: 40vw;
