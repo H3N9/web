@@ -1,4 +1,4 @@
-var tap = 1;
+var tap = 0;
 
 
 function change1(){

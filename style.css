@@ -326,6 +326,7 @@ html{
     .row-about{
         width: 100%;
         height: 60%;
+        position: relative;
     }
     #dev-slide{
         width: 100%;
@@ -461,6 +462,68 @@ html{
         margin-top: 0.3vw;
         font-size: 1.8vw;
         font-family: 'Oswald', sans-serif;
+    }
+    .row-ref{
+        width: 95%;
+        height: 65%;
+        position: absolute;
+        right: 0;
+        bottom: 5%;
+    }
+    .box-ww{
+        float:left;
+        width: 47%;
+        height: 87%;
+        margin: 1%;
+        border: 0.3vw solid white;
+        position: relative;
+    }
+    .box-dele{
+        width: auto;
+        height: auto;
+        top: -1.5vw;
+        left: 5%;
+        position: absolute;
+        background: black;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .box-dele h2{
+        color: white;
+        font-size: 2vw;
+        margin: 0;
+        font-family: 'Oswald', sans-serif;
+    }
+    .box-ref-text{
+        float:left;
+        position: relative;
+        width: 98%;
+        height: 85%;
+        margin: 1%;
+        margin-top: 3%;
+        overflow: auto;
+    }
+    .box-ref-text a{
+        float: left;
+        text-decoration: none;
+        font-size: 1.8vw;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .box-ref-text a:hover{
+        text-decoration: underline;
+    }
+    .box-ref-text h2{
+        float: left;
+        font-size: 1.8vw;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        margin-left: 5%;
+        margin-top: 2%;
+        text-indent: 1em;
     }
 
     /*Cotact*/
