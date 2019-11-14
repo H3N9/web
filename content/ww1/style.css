@@ -288,6 +288,9 @@ body {
   text-indent: 7em;
   font-family: 'Sarabun', sans-serif;
 }
+.text li{
+  font-family: 'Sarabun', sans-serif;
+}
 ::-webkit-scrollbar {
   width: 0.5vw;
 }
