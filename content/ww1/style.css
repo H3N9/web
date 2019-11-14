@@ -156,7 +156,7 @@ body {
 }
 #mb-back{
   width: 15%;
-  height: 18vw;
+  height: 1vw;
   position: relative;
   display: block;
   float: left;
@@ -310,6 +310,9 @@ body {
 @media screen and (max-width: 600px){
   .left, .right{
     display: none;
+  }
+  #mb-back{
+    height: 18vw;
   }
   #mb-back div{
     display: block;
