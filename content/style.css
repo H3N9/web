@@ -273,13 +273,13 @@ body{
     }
     #map{
         width: 80%;
-        height: 50%;
+        height: 35%;
     }
     #bar-slide{
         width: 78vw; 
     }
     .tap-bar{
-        top:50%;
+        top:35%;
         left:22%;
         width: 78vw;
         height: 100%;
